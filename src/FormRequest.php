@@ -3,9 +3,9 @@
 namespace Ososi\Form;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\UnauthorizedException;
 use Illuminate\Validation\ValidationException;
-use Illuminate\Support\Facades\Auth;
 
 abstract class FormRequest extends Request
 {
@@ -36,9 +36,9 @@ abstract class FormRequest extends Request
         return true;
     }
 
-    abstract protected function rules ();
+    abstract protected function rules();
 
-    protected function messages ()
+    protected function messages()
     {
         return [];
     }

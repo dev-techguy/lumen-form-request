@@ -7,12 +7,12 @@ use Illuminate\Support\ServiceProvider;
 
 class FormRequestServiceProvider extends ServiceProvider
 {
-    public function register ()
+    public function register()
     {
         //
     }
 
-    public function boot ()
+    public function boot()
     {
         $this->app->resolving(FormRequest::class, function ($request, $app) {
             $this->initializeRequest($request, $app['request']);
@@ -24,7 +24,7 @@ class FormRequestServiceProvider extends ServiceProvider
         });
     }
 
-    protected function initializeRequest (FormRequest $form, Request $current)
+    protected function initializeRequest(FormRequest $form, Request $current)
     {
         $files = $current->files->all();
         $files = is_array($files) ? array_filter($files) : $files;
