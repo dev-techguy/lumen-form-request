@@ -1,6 +1,6 @@
 <?php
 
-namespace AlbertCht\Form;
+namespace Ososi\Form;
 
 use Illuminate\Http\Request;
 use Illuminate\Validation\UnauthorizedException;

@@ -12,16 +12,16 @@ A package that helps developer to segregate the validation logic from controller
 ### Installation
 
 ```
-composer require albertcht/lumen-form-request
+composer require ososi/lumen-form-request
 ```
 
 * Add the service provider in `bootstrap/app.php`
 
 ```
-$app->register(AlbertCht\Form\FormRequestServiceProvider::class);
+$app->register(Ososi\Form\FormRequestServiceProvider::class);
 ```
 
-Next step is create your FormRequest and extends from `AlbertCht\Form\FormRequest`
+Next step is create your FormRequest and extends from `Ososi\Form\FormRequest`
 
 ### Example
 
@@ -30,7 +30,7 @@ Next step is create your FormRequest and extends from `AlbertCht\Form\FormReques
 
 namespace App\Http\Requests;
 
-use AlbertCht\Form\FormRequest;
+use Ososi\Form\FormRequest;
 
 class StoreDeviceRequest extends FormRequest
 {
@@ -42,7 +42,7 @@ class StoreDeviceRequest extends FormRequest
 	public function rules()
 	{
 		return [
-			'mac_address' => 'required|unique:devices,mac_address'
+			'mac_address' => ['required','unique:devices,mac_address']
 		];
 	}
 }

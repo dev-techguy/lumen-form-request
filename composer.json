@@ -1,5 +1,5 @@
 {
-    "name": "albertcht/lumen-form-request",
+    "name": "ososi/lumen-form-request",
     "description": "Form request is a package for Lumen that lets developer validate form requests like Laravel does.",
     "keywords": ["lumen", "form-request", "validation"],
     "type": "library",
@@ -12,14 +12,14 @@
     },
     "autoload": {
         "psr-4": {
-            "AlbertCht\\Form\\": "src/"
+            "Ososi\\Form\\": "src/"
         }
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Albert Chen",
-            "email": "albert.cht@gmail.com"
+            "name": "Vincent Ososi",
+            "email": "dev.techguy@gmail.com"
         }
     ],
     "minimum-stability": "dev"
