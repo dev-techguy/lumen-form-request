@@ -1,7 +1,11 @@
 {
     "name": "ososi/lumen-form-request",
     "description": "Form request is a package for Lumen that lets developer validate form requests like Laravel does.",
-    "keywords": ["lumen", "form-request", "validation"],
+    "keywords": [
+        "lumen",
+        "form-request",
+        "validation"
+    ],
     "type": "library",
     "require": {
         "illuminate/support": "~5.1 || ~7.0",
